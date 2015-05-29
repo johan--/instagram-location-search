@@ -1,0 +1,14 @@
+<div class="instagram-view"
+	ng-controller="instagramController as instagramCtrl">
+
+	<h2>{{ instagramCtrl.title }}</h2>
+
+	<div ng-repeat="item in instagramCtrl.images" class="img_container">
+		<!-- <dl>
+			<dt>{{key}}</dt>
+			<dd>{{value}}</dd>
+		</dl> -->
+		<img ng-src="{{item.images.thumbnail.url}}" alt="">
+	</div>
+	
+</div>
